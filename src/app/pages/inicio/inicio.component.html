@@ -1,0 +1,41 @@
+<div class="centradoCard1">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title
+        >Bienvenido al sistema de gestion de Estetica "mimosas"</mat-card-title
+      >
+    </mat-card-header>
+    <mat-card-content>Ingrese su nombre y contraseña </mat-card-content>
+  </mat-card>
+</div>
+<div class="centradoCard2">
+  <mat-form-field>
+    <mat-label>Enter your email</mat-label>
+    <input
+      matInput
+      placeholder="pat@example.com"
+      [formControl]="email"
+      required
+    />
+    @if (email.invalid) {
+    <mat-error>{{ getErrorMessage() }}</mat-error>
+    }
+  </mat-form-field>
+</div>
+<div class="centradoCard2">
+  <mat-form-field>
+    <mat-label>Enter your email</mat-label>
+    <input
+      matInput
+      placeholder="pat@example.com"
+      [formControl]="email"
+      required
+    />
+    @if (email.invalid) {
+    <mat-error>{{ getErrorMessage() }}</mat-error>
+    }
+  </mat-form-field>
+</div>
+<div class="centradoCard2">
+  <button mat-raised-button color="primary">Enter</button>
+</div>
